@@ -1,0 +1,20 @@
+PODS:
+  - Cartography (1.1.0)
+  - MyAmazingPod (0.0.1):
+    - Cartography (~> 1.1)
+
+DEPENDENCIES:
+  - Cartography (~> 1.1)
+  - MyAmazingPod (from `.`)
+
+EXTERNAL SOURCES:
+  MyAmazingPod:
+    :path: .
+
+SPEC CHECKSUMS:
+  Cartography: 0538ccb4044acbbda2266335fc58cb4228794d90
+  MyAmazingPod: c227506fdab308a89d4871e530b69809da721259
+
+PODFILE CHECKSUM: 7db9da756324d66bacae101c45bea43321562661
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,29 @@
+{
+  "name": "MyAmazingPod",
+  "version": "0.0.1",
+  "summary": "A brief summary for your amazing pod",
+  "homepage": "www.macalogs.com.br",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Bruno Macabeus": "my@email.com"
+  },
+  "platforms": {
+    "tvos": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/macabeus/MyAmazingPod.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "MyAmazingPod/MyAmazingPod/*.swift",
+    "MyAmazingPod/MyAmazingPod/*.xib"
+  ],
+  "dependencies": {
+    "Cartography": [
+      "~> 1.1"
+    ]
+  }
+}

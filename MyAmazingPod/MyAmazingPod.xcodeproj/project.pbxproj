@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		89FC74B61F45398B00AEEB33 /* MyAmazingPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 89FC74B41F45398B00AEEB33 /* MyAmazingPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89FC74D81F455EF500AEEB33 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FC74D71F455EF500AEEB33 /* Amazing.swift */; };
+		ECDFCF3AA6C9E1579379F98D /* Pods_MyAmazingPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B161F27C809FB1BD300EE70F /* Pods_MyAmazingPod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0725E81EF18F55CDD65BE8CA /* Pods-MyAmazingPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAmazingPod.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MyAmazingPod/Pods-MyAmazingPod.release.xcconfig"; sourceTree = "<group>"; };
 		89FC74B11F45398B00AEEB33 /* MyAmazingPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyAmazingPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FC74B41F45398B00AEEB33 /* MyAmazingPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAmazingPod.h; sourceTree = "<group>"; };
 		89FC74B51F45398B00AEEB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89FC74D71F455EF500AEEB33 /* Amazing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amazing.swift; sourceTree = "<group>"; };
+		B161F27C809FB1BD300EE70F /* Pods_MyAmazingPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAmazingPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C87DE1EF0D4E87F373D95551 /* Pods-MyAmazingPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAmazingPod.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MyAmazingPod/Pods-MyAmazingPod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDFCF3AA6C9E1579379F98D /* Pods_MyAmazingPod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +39,8 @@
 			children = (
 				89FC74B31F45398B00AEEB33 /* MyAmazingPod */,
 				89FC74B21F45398B00AEEB33 /* Products */,
+				D846B46C0CE9BBE75377BBE1 /* Pods */,
+				9F71A0CB5639849044574AE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +57,26 @@
 			children = (
 				89FC74B41F45398B00AEEB33 /* MyAmazingPod.h */,
 				89FC74B51F45398B00AEEB33 /* Info.plist */,
+				89FC74D71F455EF500AEEB33 /* Amazing.swift */,
 			);
 			path = MyAmazingPod;
+			sourceTree = "<group>";
+		};
+		9F71A0CB5639849044574AE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B161F27C809FB1BD300EE70F /* Pods_MyAmazingPod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D846B46C0CE9BBE75377BBE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C87DE1EF0D4E87F373D95551 /* Pods-MyAmazingPod.debug.xcconfig */,
+				0725E81EF18F55CDD65BE8CA /* Pods-MyAmazingPod.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89FC74B91F45398B00AEEB33 /* Build configuration list for PBXNativeTarget "MyAmazingPod" */;
 			buildPhases = (
+				2F5998BC802FA63C2D21ED46 /* [CP] Check Pods Manifest.lock */,
 				89FC74AC1F45398B00AEEB33 /* Sources */,
 				89FC74AD1F45398B00AEEB33 /* Frameworks */,
 				89FC74AE1F45398B00AEEB33 /* Headers */,
 				89FC74AF1F45398B00AEEB33 /* Resources */,
+				CB6F3AF975C6A714BB9B5072 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,7 @@
 					89FC74B01F45398B00AEEB33 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 56KUK57QCP;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,11 +157,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F5998BC802FA63C2D21ED46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB6F3AF975C6A714BB9B5072 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MyAmazingPod/Pods-MyAmazingPod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89FC74AC1F45398B00AEEB33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FC74D81F455EF500AEEB33 /* Amazing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +303,9 @@
 		};
 		89FC74BA1F45398B00AEEB33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87DE1EF0D4E87F373D95551 /* Pods-MyAmazingPod.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 56KUK57QCP;
@@ -252,13 +318,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = macabeus.MyAmazingPod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		89FC74BB1F45398B00AEEB33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0725E81EF18F55CDD65BE8CA /* Pods-MyAmazingPod.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 56KUK57QCP;
@@ -294,6 +363,7 @@
 				89FC74BB1F45398B00AEEB33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
